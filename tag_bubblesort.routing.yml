@@ -1,0 +1,14 @@
+tag_bubblesort.form:
+  path: '/TAGBubbleSort'
+  defaults:
+    _title: 'TAG - Bubble Sort'
+    _form: '\Drupal\tag_bubblesort\Form\TAGBubblesortForm'
+  requirements:
+    _permission: 'access content'
+tag_bubblesort.bubblesort_json:
+  path: '/tag_bubblesort/json/{data}'
+  defaults:
+    _title: 'Bubble JSON'
+    _controller: '\Drupal\tag_bubblesort\Controller\TAGBubblesortController::bubblesortJson'
+  requirements:
+    _permission: 'access content'

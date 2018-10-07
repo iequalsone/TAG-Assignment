@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Theme override for a form.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - form: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<form{{ attributes }}>
+    {{ form.form_build_id }}
+    {{ form.form_token }}
+    {{ form.form_id }}
+    <div>
+        {{ form.numbers_total }}
+    </div>
+    <div>
+        {{ form.integer_min }}
+    </div>
+    <div>
+        {{ form.integer_max }}
+    </div>
+    <div>
+        {{ form.submit }} {{ form.step_button }} {{ form.play_button }}
+    </div>
+</form>
+<table class="chart"></table>

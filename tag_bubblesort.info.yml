@@ -1,0 +1,5 @@
+name: TAG Bubblesort
+type: module
+description: TAG Assignment code for BubbleSort
+core: 8.x
+package: TAG
