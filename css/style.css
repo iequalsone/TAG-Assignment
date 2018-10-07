@@ -10,3 +10,8 @@
 .chart {
   padding-top: 15px;
 }
+
+.unsorted.sorted {
+  background-color: #FFB81C;
+  color: black
+}

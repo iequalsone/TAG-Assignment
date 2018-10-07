@@ -40,7 +40,7 @@ class TAGBubblesortForm extends FormBase
 
         $form['numbers_total'] = array(
             '#type' => 'number',
-            '#title' => $this->t('Total number of bars:'),
+            '#title' => $this->t('Total number of bars: (Max: 35)'),
             '#required' => true,
             '#min' => 1,
             '#max' => 35,

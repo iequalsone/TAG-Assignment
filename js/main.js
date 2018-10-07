@@ -41,7 +41,7 @@
       // Initial display of bar chart on page load or shuffle
       function bubblesort_display(data) {
 
-        x = d3.scale.linear()
+        x = d3.scaleLinear()
           .domain([0, 100])
           .range([0, 500]);
 
@@ -106,7 +106,7 @@
         data = $.merge(newdata, data);
 
         // Redraw bar chart with sorted pieces
-        j = d3.scale.linear()
+        j = d3.scaleLinear()
           .domain([0, 100])
           .range([0, 500]);
 
@@ -124,12 +124,12 @@
         // Set background colors on sorted bars
         all.each(function (index) {
           if (index == indexToRemove) {
-            $(this).css('background-color', '#FFB81C').css('color', 'black').addClass('sorted');
+            $(this).addClass('sorted');
             return false;
           }
         });
         for (i = indexToRemove; i < finalIndex; i++) {
-          $('.chart > div:eq(' + i + ')').css('background-color', '#FFB81C').css('color', 'black').addClass('sorted');
+          $('.chart > div:eq(' + i + ')').addClass('sorted');
         }
 
         // If sorting is finished, exit
